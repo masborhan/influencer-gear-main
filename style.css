@@ -1,0 +1,30 @@
+/* body section */
+
+/* header section */
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 10px;
+  padding: 0px 10px;
+}
+nav li :hover {
+  background-color: lightgray;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+/* footer section */
+footer {
+  background-color: cornflowerblue;
+}
+footer h1 {
+  text-align: center;
+  margin: 0px;
+}
+footer p {
+  text-align: center;
+  margin: 0px;
+}
