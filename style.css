@@ -1,21 +1,144 @@
 /* body section */
-
-/* header section */
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+/* Style Navigation bar */
+.nav-left{
+  text-decoration: none;
+  margin-left: 45px;
+}
+nav {
+  margin: 0px;
+  overflow: hidden;
+  text-align: center;
+  float: right;
+}
 nav ul {
   display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 nav li {
   list-style: none;
   margin-right: 10px;
   padding: 0px 10px;
-}
+  }
 nav li :hover {
-  background-color: lightgray;
+  background-color: lightslategray;
 }
 nav li a {
   text-decoration: none;
   color: black;
-}
+  font-size: 12px;
+  text-align: center;
+  }
+  
+  /* Top Section */
+  .top-container{
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-left: 50;
+      margin-right: 40px;
+  }
+  .top-content{
+      margin: 20px 40px;
+      width: 50%;
+      text-align: justify;
+  }
+  .image-content{
+margin: 10px;
+width: 40%;
+  }
+  .top-content a{
+      text-decoration: none;
+      background-color: olive;
+      border-radius: 15px;
+      padding: 5px 15px;
+      color: white;
+  }
+
+  /* Company Logo */
+  .logo{
+      display: flex;
+    }
+  .logo img{
+      padding: 0px 10px;
+      border: 5px;
+      margin-left: 25px;
+  }
+  /* Popular Collection style */
+  .section-title{
+    text-align: center;
+  }
+  .item-container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    margin-left: 80px;
+    margin-right: 40px;
+    width: 90%;
+  }
+  .item{
+    border-radius: 3px;
+    box-shadow: 10px 10px 30px gray;
+    padding: 10px;
+    width: 329px;
+    height: 476px;
+    margin-top: 20px;
+  }
+  
+  .item .item-banner img{
+    width: 300px;
+    height: 256px;
+  }
+  .item-detail .item-title{
+    text-align: left;
+  }
+  
+  .item-detail .item-title p{
+    text-align: left;
+  }
+  
+  .fa-star{
+    font-size: 12px;
+  }
+  .fa-star.filled{
+    color: #FB8200;
+  }
+  .fa-star.empty{
+    color:gray;
+  }
+  /* special section style */
+  .contact {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    color: white;
+    background-color: yellowgreen;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+  }
+  input[type="submit"]:hover {
+    background-color: lightseagreen;
+  }
 /* footer section */
 footer {
   background-color: cornflowerblue;
@@ -23,8 +146,23 @@ footer {
 footer h1 {
   text-align: center;
   margin: 0px;
+  font-size: 20px;
+  font-weight: 700;
 }
 footer p {
   text-align: center;
   margin: 0px;
+  font-size: 10px;
+}
+.social-media{
+ text-align: center;
+}
+
+/* Add responsivness <500px */
+@media screen and (max-width:500px) {
+    nav a{
+        float: none;
+        display: block;
+    }
+}
 }
